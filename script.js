@@ -82,3 +82,6 @@ button.addEventListener('click', passwordVerify);
 
 button.addEventListener('click', submitCondition);
 
+
+// Refactoring notes,
+// Can reduce lines of code by using classes instead of IDs

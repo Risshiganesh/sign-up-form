@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'Audiowide';
+    src: url(assets/Audiowide-Regular.otf);
+    
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url(assets/Exo2-Regular.otf);
+}
+
+
+
+*,
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 2.328966521106259vh; */
+    /* border: 1px solid red; */
+
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: rgba(0, 0, 255, 0.337);
+    /* border: 2px solid red; */
+    
+}
+
+form {
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+legend {
+    font-size: 40px;
+    font-family: Exo, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: white;
+    text-decoration:double;
+    /* color: rgb(92, 0, 114); */
+}
+
+fieldset {
+    border: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    font-family: Exo, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    /* margin-bottom: 10px; */
+}
+
+input {
+    appearance: none;
+    height: 40px;
+    width: 100%;
+    /* min-width: 200px; */
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0 5%;
+    border: 1px solid grey;
+    outline: none;
+    font-family: Exo, Arial, Helvetica, sans-serif;
+    
+}
+
+a{
+    color: aqua;
+    font-weight: 700;
+
+}
+
+
+
+/* ID Section */
+
+
+
+
+#main-container {
+    display: flex;
+    flex: 1;
+    /* border: 3px solid greenyellow; */
+    height: 100%;
+    min-height: 800px;
+
+
+
+}
+
+#logo-section {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+    background-image: url(assets/astronaut.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+#logo-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    position: relative;
+}
+
+#logo-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 168px;
+    background-color: rgba(0, 0, 0, 0.472);
+    padding: 1.25rem;
+    flex: 1 1 auto;
+    position: relative;
+    bottom: 185px;
+}
+
+#logo-line > img {
+    height: 100px; /*display flex at logo-div messing things up */
+}
+
+#logo-line > h1 {
+    padding-left: 20px;
+    font-size: 45px !important;
+    font-family: Audiowide, Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+
+
+#credit-div {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+
+#credit-line {
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.419);
+    padding: 5px;
+}
+
+
+
+
+/* Form Section */
+
+
+
+
+#form-section {
+    /* border: 1px solid red; */
+    display: flex;
+    /* flex-direction: row; */
+    flex: 1 1 auto;
+    padding: 7% 0;
+    background-color: rgb(58, 0, 73);
+    background: linear-gradient(0.20turn,#871F78, rgb(0, 0, 93));
+   
+    
+}
+
+#form-container {
+    /* border: 2px solid #f000ff; */
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+    
+}
+
+
+#main-copy {
+    font-family: Exo, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#form-div {
+    
+    background-color: rgb(176, 56, 0);
+    /* border: 3px solid blue; */
+    flex: auto;
+    /* padding-right: 30%; */
+    
+    padding: 3% 0%;
+    min-width: 700px;
+    max-height: 400px;
+    min-height: 370px;
+    box-shadow: 3px 3px 10px black;
+}
+
+#col-parent {
+    /* border: 2px solid orange; */
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+
+}
+
+#sign-up-form {
+    flex: auto;
+}
+
+#login-div{
+    font-family: Exo, Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+#login-div a:link{
+    font-family: Exo, Arial, Helvetica, sans-serif;
+    color: rgb(214, 68, 0);
+    text-decoration: none;
+}
+
+
+#button-div > button {
+    background-color: rgb(176, 56, 0);
+    font-weight: 600;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(227, 99, 0);
+    box-shadow: 3px 3px 10px black;
+    color: white;
+    font-family: Exo, Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+/* PADDING */
+#main-copy > p,
+fieldset,
+#button-div,
+#login-div {
+    padding: 0px 10% 0px 5%;
+}
+
+
+#form-div,
+#button-div{
+    margin-bottom: 30px;
+}
+
+
+/* CLASSES */
+
+.form-cols {
+    /* border: 2px solid yellow; */
+    flex: auto;
+    width: 65%;
+    min-width: 500px;
+    /* margin: 10px; */
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+}
+
+.input-container > div {
+    width: 100%;
+    margin: 0 10% 2% 0%;
+}
+
+
+
+
+/* STATES */
+
+a:visited{
+    color: violet;
+
+}
+
+
+input:focus {
+    appearance: none;
+    border: 2px solid darkblue;
+    box-shadow: 3px 3px 10px black;
+}
+
+
+/* IDs */
+
+#button-div > button:active {
+    box-shadow: inset 3px 3px 10px black;
+}
+
+
+/* PASSWORD */
+
+.error {
+    border: 2px solid red;
+}
+
+.main-error + span::after {
+    content: "*Passwords do not match";
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.wrong-input + span::after {
+    content: "*Use alphanumeric characters only";
+    font-size: 13px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.match {
+    border: 2px solid greenyellow;
+}
+
+.match + span::after {
+    content: "*Passwords match";
+    color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+

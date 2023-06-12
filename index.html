@@ -1,13 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <script src="script.js" defer></script>
+            <title>Sign-up form</title>
+        </head>
+        <body>
+            <div id="main-container">
+                <div id="logo-section">
+                    
+                    <div id="logo-div">
+                        <div id="logo-line">
+                            <img src="assets/logo.png" alt="logo">
+                            <h1 id="logo-font">SOLARBASE</h1>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="credit-div">
+                        <div id="credit-line">
+                            <p>Photo by <a href="https://unsplash.com/fr/@nickbrunner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Brunner</a> on <a href="https://unsplash.com/photos/LXspKUjsgH0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+
+
+                <div id="form-section">
+
+                    <div id="form-container">
+                            <div id="main-copy">
+
+                                <p>This is not a real online service! You know you need to visit other planets and lifeforms to have lived a complete life. Sign up <em>now</em> to get started.</p>
+                                <br>
+                                <p>You <em>know</em> you want to.</p>
+                    
+                            </div>
+
+                            <div id="form-div">
+                                <form action="" method="get" id="sign-up-form">
+                                <fieldset>
+                                    <legend>Let's do this!</legend>
+                                
+                                        <div id="col-parent">
+                                            <div id="col1" class="form-cols">
+                                                <ul>
+                                                    <li>
+                                                        <div class="input-container">
+                                                            <div>
+                                                                <label for="fname">FIRST NAME</label>
+                                                                <br>
+                                                                <input type="text" id="fname" required>
+                                                            </div>
+                                                            <div>
+                                                                <label for="lname">LAST NAME</label>
+                                                                <br>
+                                                                <input type="text" id="lname" required>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    </li>
+                                                    <li>
+                                                        <div class="input-container">
+                                                            <div>
+                                                                <label for="email">EMAIL</label>
+                                                                <br>
+                                                                <input type="email" id="email" required>
+                                                            </div>
+                                                            <div>
+                                                                <label for="pnumber">PHONE NUMBER</label>
+                                                                <br>
+                                                                <input type="tel" id="pnumber" pattern="^[0-9]*$" required>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    </li>
+                                                    <li>                        
+                                                        <div class="input-container">
+                                                            <div>
+                                                                <label for="password">PASSWORD</label>
+                                                                <br>
+                                                                <input type="password" id="password" required>
+                                                                <span></span>
+                                                            </div>
+                                                            <div>
+                                                                <label for="c-password">CONFIRM PASSWORD</label>
+                                                                <br>
+                                                                <input type="password" id="c-password" required>
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </fieldset>
+                            </form> 
+                            </div>
+
+                            <div id="button-div">
+                                <button type="submit" form="sign-up-form" id="sign-up-button">Create Account</button>
+                            </div>
+                            <div id="login-div">
+                                <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Login</a></p>
+                            </div>
+                        
+                        </div>
+                </div>
+            </div>
+
+        
+        </body>
+        </html>

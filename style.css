@@ -359,3 +359,4 @@ input:focus {
     font-weight: 600;
 }
 
+/* Use @media, clamp(), min() & max() to improve responsiveness */
